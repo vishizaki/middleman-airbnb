@@ -1,0 +1,9 @@
+<ul class="list-inline text-center">
+  <% ["vishizaki", "nancyican"].each do |gh_username| %>
+    <li>
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{gh_username}", class: "img-circle" %>
+      <h3><%= link_to "<i class='fab fa-github-alt'></i> #{gh_username.capitalize}", "https://github.com/#{gh_username}", class: "link-to" %>
+      </h3>
+    </li>
+  <% end %>
+</ul>

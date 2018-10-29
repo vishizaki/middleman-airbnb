@@ -2,14 +2,96 @@
 title: Le Wagon - Middleman
 ---
 
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
+  <!-- card content -->
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 100%), url(<%= image_path 'amsterdam.jpeg'%>)">
+  <div class="banner-content">
+    <h1>Welcome home</h1>
+    <p>Book unique homes and experience a city like a local.</p>
+      <form class="form-inline">
+        <div class="form-group">
+          <label for="form-where"></label>
+          <input type="text" class="form-control" id="form-where" placeholder="Where?">
+        </div>
+        <div class="form-group">
+          <label for="form-when"></label>
+          <input type="text" class="form-control" id="form-when" placeholder="When?">
+        </div>
+        <div class="form-group">
+<!--           <label for="form-when"></label>
+          <input type="text" class="form-control" id="form-when" placeholder="When?"> -->
+          <select name="guests" class="form-control">
+            <option value="1guest">1 guest</option>
+            <option value="2guest">2 guests</option>
+            <option value="3guest">3 guests</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">Search</button>
+      </form>
   </div>
 </div>
+
+
+  <h2 class="text-center">Recent flats</h2>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4">
+      <!-- insert <div class="card"> -->
+      <div class="card" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 100%), url(<%= image_path 'paris.jpeg'%>)">
+        <div class="card-category">PARIS, FRANCE</div>
+        <div class="card-description">
+          <h2>Sebastien's home</h2>
+          <p>Charming room in Montmartre</p>
+          <p class="rating">
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #cacccd"></i>
+                <i class="fa fa-star" style="color: #cacccd"></i>
+            </p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <!-- insert <div class="card"> -->
+      <div class="card" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 100%), url(<%= image_path 'tokyo.jpeg'%>)">
+        <div class="card-category">TOKYO, JAPAN</div>
+        <div class="card-description">
+          <h2>Boris' home</h2>
+          <p>Small flat in Tokyo</p>
+          <p class="rating">
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #cacccd"></i>
+                <i class="fa fa-star" style="color: #cacccd"></i>
+            </p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+      <!-- insert <div class="card"> -->
+      <div class="card" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 100%), url(<%= image_path 'london.jpeg'%>)">
+        <div class="card-category">LONDON, UK</div>
+        <div class="card-description">
+          <h2>Romain's home</h2>
+          <p>Nice flat in Picadilly</p>
+          <p class="rating">
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #ffb400"></i>
+                <i class="fa fa-star" style="color: #cacccd"></i>
+                <i class="fa fa-star" style="color: #cacccd"></i>
+                <i class="fa fa-star" style="color: #cacccd"></i>
+            </p>
+        </div>
+        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
+        <a class="card-link" href="#" ></a>
+      </div>
+    </div>
+  </div>
+</div>
+
